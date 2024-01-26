@@ -1,0 +1,46 @@
+//wc: with comment
+
+//Hw5-4-1 I-type testing 
+111111111111 00101 000 00000 0010011 //addi x0 x5 -1
+//slli x0
+//slti x0
+//sltui x0
+//xori x0
+//srli x0
+//srai x0
+//ori x0
+//andi x0
+
+//Hw5-4-2 R-type testing
+//add x0
+//sub x0
+//sll x0
+//slt x0
+//sltu x0
+//xor x0
+//srl x0 
+//sra x0
+//or x0
+//and x0
+
+//Hw5-4-6 Load/Store inst. testing
+//lb x1 x0 0
+//lh x1 x0 2
+//lw x1 x0 0
+//lbu x1 x0 3
+//lbh x1 x0 0
+//sb x1 x0 0
+//sh x1 x0 2
+//sw x1 x0 0
+
+//Hw5-4-8 B-type testing
+//beq x1 x1 24
+//bne x1 x1 20
+//blt x1 x2 16
+//bge x1 x0 12
+//bltu x1 x1 8
+//bgeu x1 x1 4
+
+//Hw5-4-9 J-type testing
+//jal x0 -20
+//jalr x0 x4 16
