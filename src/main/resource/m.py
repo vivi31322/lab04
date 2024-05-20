@@ -1,8 +1,11 @@
 import os
 
-input = os.getcwd() + "/src/main/resource/InstMem_wc.txt"
-output_mch = os.getcwd() + "/src/main/resource/InstMem.txt"
-output_ass = os.getcwd() + "/src/main/resource/InstMem_ass.txt"
+#input = os.getcwd() + "/src/main/resource/InstMem_wc.txt"
+#output_mch = os.getcwd() + "/src/main/resource/InstMem.txt"
+#output_ass = os.getcwd() + "/src/main/resource/InstMem_ass.txt"
+input = "InstMem_wc.txt"
+output_mch = "InstMem.txt"
+output_ass = "InstMem_ass.txt"
 
 i_f = open(input,"r")
 o_f_mch = open(output_mch,"w")
