@@ -7,7 +7,7 @@ input = "InstMem_wc.txt"
 output_mch = "InstMem.txt"
 output_ass = "InstMem_ass.txt"
 
-i_f = open(input,"r")
+i_f = open(input,"r",encoding="utf-8")
 o_f_mch = open(output_mch,"w")
 o_f_ass = open(output_ass,"w")
 i_f_ls = i_f.readlines()

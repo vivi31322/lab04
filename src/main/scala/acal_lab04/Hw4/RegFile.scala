@@ -13,12 +13,14 @@ class RegFile(readPorts:Int) extends Module {
 
   // 1. the reset value of all regs is zero
   // val regs = RegInit(VecInit(Seq.fill(32)(0.U(32.W))))
-
+  //"hfffffff0".U(32.W)
   // 2. the reset value of all regs is their index
-  val regs = RegInit(VecInit(Seq.range(0,32).map{x=>x.U(32.W)}))
-
+   val regs = RegInit(VecInit(Seq.range(0,32).map{x=>x.U(32.W)}))
+  
   //Wiring
   (io.rdata zip io.raddr).map{case(data,addr)=>data:=regs(addr)}
+  //不管譖麼改都沒有改變ㄟ/.....
+  //regs(4):= "hffff0000".U
   when(io.wen) {regs(io.waddr) := io.wdata}
   regs(0) := 0.U
 }
