@@ -1,1 +1,1 @@
-lbu x1 x0 3 0x000000aa
+jalr x0 x4 16
