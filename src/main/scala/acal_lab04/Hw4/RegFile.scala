@@ -21,7 +21,7 @@ class RegFile(readPorts:Int) extends Module {
   
   //Wiring
   (io.rdata zip io.raddr).map{case(data,addr)=>data:=regs(addr)}
-  //不管譖麼改都沒有改變ㄟ/.....
+  //會晚一個cycle改變值
   //regs(4):= "hffff0000".U
   when(io.wen) {regs(io.waddr) := io.wdata}
   regs(0) := 0.U
